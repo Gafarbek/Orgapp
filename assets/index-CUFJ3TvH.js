@@ -1,0 +1,1 @@
+import{g as a}from"./localStorage-B3WGF9uy.js";const r=document.forms.sign;r.addEventListener("submit",t=>{t.preventDefault();const s={};new FormData(r).forEach((e,n)=>{s[n]=e});const o=a().find(e=>e.email===s.email&&e.password===s.password);o?(localStorage.setItem("currentUser",JSON.stringify(o)),window.location.href="/"):alert("Ошибка входа"),window.location.href="/home"});

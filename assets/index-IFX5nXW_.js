@@ -1,0 +1,1 @@
+import{u as t,s as a}from"./localStorage-B3WGF9uy.js";const s=document.forms.reg;s.addEventListener("submit",n=>{n.preventDefault();const e={};if(new FormData(s).forEach((o,r)=>{e[r]=o}),t(e.email)){alert("Такой пользовател есть");return}console.log(e),a(e),window.location.href="/signin"});
