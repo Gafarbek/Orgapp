@@ -1,0 +1,153 @@
+.hidden {
+    display: none !important; 
+}
+
+.allLIsts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 100vh;
+    padding: 16px;
+}
+
+.group1 {
+    .projectHeader {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .invite {
+            border: solid black 3px;
+            border-radius: 8px;
+            padding: 12px;
+            font-weight: 700;
+            font-size: 12px;
+            background-color: #F5F1EF;
+        }
+    }
+}
+
+.group2 {
+
+    #lists {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(6, 240px);
+        /* grid-template-rows: repeat(1, 100vh); */
+        padding: 0;
+    
+        .listCardWrapper {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 16px;
+            background-color: #808080;
+            padding: 8px;
+            border-radius: 8px;
+    
+            .cardHeader {
+                display: flex;
+                justify-content: space-between;
+                color: white;
+    
+                #chapterNameInput {
+                    display: none;
+                }
+
+                
+    
+                .menuWrapper {
+                    .openMenu {
+                        text-align: center;
+                        font-size: 12px;
+                        background: none;
+                        border: none;
+                        color: white;
+                    }
+                    .dropMenu {
+                        background-color: #646464;
+                        display: flex;
+                        position: absolute;
+                        padding: 10px 0px;
+                        border-radius: 8px;
+                        
+                        .delite {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #646464;
+                            border: none;
+                            color: white;
+                            gap: 3px;
+                            padding: 10px 5px;
+
+                            img {
+                                width: 20px;
+                            }
+                        }
+
+                        .delite:hover {
+                            background-color: #7e7e7e;
+                        }
+                    }
+                }
+            }
+    
+            .cardList {
+                .card {
+                    display: grid;
+                    gap: 4px;
+                    background-color: white;
+                    border-radius: 8px;
+                    padding: 10px;
+                    padding-right: 43px;
+    
+                    .lvl {
+                        width: 24px;
+                        height: 8px;
+                        border-radius: 2px;
+                        background-color: green;
+                    }
+
+                    #titleNameInput {
+                        display: none;
+                    }
+                }
+            }
+    
+            .addTask {
+                text-align: start;
+                background: none;
+                border: none;
+                color: white;
+
+                span {
+                    font-size: 20px;
+                    padding-right: 4px;
+                }
+            }
+        }
+    }
+    .createNewSection {
+        display: inline-flex;
+        align-items: center;
+        text-align: start;
+        border: none;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        flex-shrink: 0;
+        justify-content: center;
+        width: 136px;
+        height: 36px;
+        
+        span {
+            font-size: 20px;
+            padding-right: 6px;
+        }
+    }
+}
